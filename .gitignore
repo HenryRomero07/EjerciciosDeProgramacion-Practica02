@@ -1,3 +1,21 @@
+# Ignora todo EXCEPTO la carpeta src/ y su contenido
+/*
+!/src/
+
+# Ignora carpetas específicas de NetBeans y build
+build/
+nbproject/
+test/
+
+# Ignora archivos específicos de construcción
+build.xml
+manifest.mf
+
+# Ignora todos los archivos dentro de src/ que no sean código fuente
+src/*.iml
+src/.idea/
+src/*.class
+
 # Compiled class file
 *.class
 
