@@ -93,18 +93,18 @@ public class EjerciciosFor {
      
      */
     public void mostrarPiramide(int m) {
-        int num = 0;
-        String numeros;
-        numeros = "";
-        
-        System.out.println("****** Piramide de numeros de m base ******");
-        System.out.println("Ingrese el valor para crear su piramide:  ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el número de filas de la pirámide:");
         m = sc.nextInt();
-        num = m;
-        for (int i = 0; i < m; i++) {
-            numeros += num + " ";
-            System.out.println(numeros);
-            num--;
+
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= m - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (i * 2) - 1; k++) {
+                System.out.print(k);
+            }
+            System.out.println(); 
         }
     }
 }
