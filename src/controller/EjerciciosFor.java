@@ -40,6 +40,8 @@ public class EjerciciosFor {
 
     //***************************************************************************************************
 /**
+ * Método que encuentra y muestra todos los números de 3 dígitos donde la suma
+ * de sus dígitos individuales es igual a 10.
  * 
  */
     public void digitosSumanDiez() {
